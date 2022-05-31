@@ -22,8 +22,9 @@ body{
 
 nav div.button{
     text-transform: uppercase;
-    font-size: medium;
-    color: brown;
+    color: orangered;
+    font-weight: 600;
+    font-size: large;
 }
 
 .nav-bar div img{
@@ -39,9 +40,14 @@ nav div.button{
 
 .nav-bar .gymName h4{
     margin: 0px 10px;
-
 }
 /* background */
+/* main{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+
+} */
 
 main .pimage1{
     box-sizing: border-box;
@@ -55,8 +61,27 @@ main .pimage2{
     height: 1080px;
     margin-bottom: 10px;
 }
+
+/* main .pimage1{
+    background-image:url(/Images/BackgroundPic1.png);
+    height: auto;
+    position: relative;
+    opacity: 0.85;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+main .pimage2{
+    background-image:url(/Images/BackgroundPic2.png);
+    height: 1080px;
+    min-height: 50%;
+    position: relative;
+    opacity: 0.85;
+    background-size: cover;
+    margin-bottom: 10px;
+} */
+
 main .pimage1 .text{
-    color: red;
+    color: rgb(255, 64, 0);
 }
 
 footer{
@@ -127,10 +152,10 @@ ul{
 
 .copyrights .pageEnd{
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    justify-content: center;
 }
 
-.copyrights .pageEnd h4{
+.copyrights .pageEnd div{
     color: white;
+    margin-bottom: 20px;
 }
