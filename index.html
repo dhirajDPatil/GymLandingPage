@@ -9,7 +9,14 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <div><img src="/Icons/Logo2.PNG" alt="logo" ></div>
+        <ul class="nav-bar-new">
+            <!-- <li class="logo"><img src="/Icons/Logo2.PNG" alt="logo" ></li> -->
+            <li class="home">Home</li>
+            <li class="home">Programmes</li>
+            <li class="home">Contact Us</li>
+            <li class="home">Timing</li>
+        </ul>
+        <!-- <div><img src="/Icons/Logo2.PNG" alt="logo" ></div>
         <div class="gymName">
             <h3>Forma</h3>
             <h4>Fitness Club</h4>
@@ -17,9 +24,32 @@
         <div class="button home">Home</div>
         <div class="button home">About Us</div>
         <div class="button address">Programmes</div>
-        <div class="button address">Contact Us</div>
+        <div class="button address">Contact Us</div> -->
     </nav>
     <main>
+        <div id="home" class="pimage2">
+            <div class="text">This is the first text</div>
+        </div>
+        <div class="registration">
+            <h3 class="formname">Enter your details to book an apointment</h3>
+            <div class="formdetails">
+                <form action="" method="post">
+                    <div class="inputfeild">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="firstName" id="fname" placeholder="Enter first name">
+                    </div>
+                    <div class="inputfeild">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lastName" id="lname" placeholder="Enter last name ">
+                    </div>
+                    <div class="inputfeild">
+                        <label for="email">Email Id</label>
+                        <input type="email" name="emaiId" id="eid"  placeholder="abc@xyz.com">
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
         <div class="pimage1">
             <div class="text">
                 <div class="programs font">
@@ -58,15 +88,10 @@
                         <ul class="List">
                             <li>Regular Workout</li>
                         </ul>
-                    </div>
-
-                    
+                    </div>                    
                 </div>
             </div>
-        </div>
-        <div id="home" class="pimage2">
-            <div class="text">This is the first text</div>
-        </div>
+        </div>   
         <div class="pimage1">
             <div class="text">This is the first text</div>
         </div>
@@ -74,7 +99,7 @@
     <footer class="f-Address" id="contactUs">
         <div class="container">
             <div class="footerLinks">
-                <div class="programs font">
+                <!-- <div class="programs font">
                     <h4 class="title">Forma Programmes</h4>
                     <div class="displayPosition">
                         <div class="icon">
@@ -111,7 +136,7 @@
                             <li>Regular Workout</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="Plans font">
                     <h4 class="title">Monthly Plan</h4>
                     <ul class="List">
@@ -152,7 +177,7 @@
                 </div>
                 <div class="Location font">
                     <h4 class="title">Location</h4>
-                    <div class="address location">
+                    <div class="address location displayPosition">
                         <div class="icon">
                             <a href="https://www.google.com/maps/place/Forma+Fitness+Club/@18.591451,73.7424918,18z/data=!3m1!4b1!4m5!3m4!1s0x3bc2bbde5d702467:0x39c50227a05392de!8m2!3d18.5914531!4d73.7435409">
                                 <img src="/Icons/location.png" alt="location">
