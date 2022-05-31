@@ -3,6 +3,10 @@
     list-style: none;
 }
 
+body{
+    background-color: black;
+}
+
 .nav-bar {
     background-color: white;
     position: sticky;
@@ -14,7 +18,6 @@
     align-items: center;
     flex-direction: row;
     column-gap: 30px;
-    border: 1px solid black;
 }
 
 nav div.button{
@@ -58,7 +61,6 @@ main .pimage1 .text{
 
 footer{
     background-color: black;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -66,13 +68,69 @@ footer{
     column-gap: 30px;
 }
 
-footer .add{
-    color: rgb(106, 229, 227);
+footer .container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    column-gap: 80px;
+}
+
+.footerLinks .font{
+    color: white;
+}
+
+.footerLinks .font h4{
+    font-size: larger;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding-left: 0;
+}
+.address{
+    color: white;
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
 }
 
-footer .add .icon{
-    background-color: aliceblue;
+.displayPosition{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.displayPosition div a img{
+    padding-right: 10px;
+}
+
+.address.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.address.location ul{
+    margin-top: 0;
+}
+
+.address.location div{
+    padding-right: 10px;
+}
+
+.copyrights .pageEnd{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.copyrights .pageEnd h4{
+    color: white;
 }
