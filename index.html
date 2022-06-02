@@ -9,48 +9,28 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <ul class="nav-bar-new">
-            <!-- <li class="logo"><img src="/Icons/Logo2.PNG" alt="logo" ></li> -->
-            <li class="home">Home</li>
-            <li class="home">Programmes</li>
-            <li class="home">Contact Us</li>
-            <li class="home">Timing</li>
+        <ul class="logo-navcontent">
+            <li class="home"><img src="/Icons/Logo2.PNG" alt="logo" ></li>
+            <li class="nav-buttons">
+                <ul class="nav-bar-new">
+                    <li class="nav-btn"><a href="#home">Home</a></li>
+                    <li class="nav-btn"><a href="#id">Programmes</a></li>
+                    <li class="nav-btn"><a href="#id3">Gym Timing</a></li>
+                    <li class="nav-btn"><a href="#id3">Plans</a></li>
+                    <li class="nav-btn"><a href="#id3">Registration</a></li>
+                    <li class="nav-btn"><a href="#id2">Contact Us</a></li>
+                </ul>
+            </li>
         </ul>
-        <!-- <div><img src="/Icons/Logo2.PNG" alt="logo" ></div>
-        <div class="gymName">
-            <h3>Forma</h3>
-            <h4>Fitness Club</h4>
-        </div>
-        <div class="button home">Home</div>
-        <div class="button home">About Us</div>
-        <div class="button address">Programmes</div>
-        <div class="button address">Contact Us</div> -->
     </nav>
     <main>
-        <div id="home" class="pimage2">
-            <div class="text">This is the first text</div>
-        </div>
-        <div class="registration">
-            <h3 class="formname">Enter your details to book an apointment</h3>
-            <div class="formdetails">
-                <form action="" method="post">
-                    <div class="inputfeild">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="firstName" id="fname" placeholder="Enter first name">
-                    </div>
-                    <div class="inputfeild">
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lastName" id="lname" placeholder="Enter last name ">
-                    </div>
-                    <div class="inputfeild">
-                        <label for="email">Email Id</label>
-                        <input type="email" name="emaiId" id="eid"  placeholder="abc@xyz.com">
-                    </div>
-                    <input type="submit" value="Submit">
-                </form>
+        <div id="home" class="homeAbout pimage1">
+            <div class="about-container">
+                <p class="aboutGym">Forma Gym is located at the centre of Hinjewadi. Has all required equipments you need for your exercise. Has supportive trainers and staff. Additon to this new Programmes are also added scroll own to check. Has very clean environment, abides with recent COVID norms. Once registered youll have an apointment with nutritionist, based on your goal to add or reduce weight custom diet plan will be provided, as per persons eating habbits vegitarian/non vegitarian/mixed plans are provided</p>
             </div>
         </div>
-        <div class="pimage1">
+        <!-- new image -->
+        <div class="pimage2">
             <div class="text">
                 <div class="programs font">
                     <h4 class="title">Forma Programmes</h4>
@@ -91,9 +71,38 @@
                     </div>                    
                 </div>
             </div>
-        </div>   
-        <div class="pimage1">
-            <div class="text">This is the first text</div>
+        </div>
+        <!-- form -->
+        <div class="registration">
+            <h3 class="formname">Enter your details to book an apointment</h3>
+            <div class="formdetails">
+                <form action="" method="post">
+                    <div class="inputfeild">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="firstName" id="fname" placeholder="Enter first name">
+                    </div>
+                    <div class="inputfeild">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lastName" id="lname" placeholder="Enter last name ">
+                    </div>
+                    <div class="inputfeild">
+                        <label for="email">Email Id</label>
+                        <input type="email" name="emaiId" id="eid"  placeholder="abc@xyz.com">
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <!-- Timing -->
+        <div class="gym-timing">
+            <div class="box open">
+                <h3>Morning Opens At </h3>
+                <h3>6.30AM</h3>
+            </div>
+            <div class="box close">
+                <h3>Evening Closes At </h3>
+                <h3>9.00PM</h3>
+            </div>
         </div>
     </main>
     <footer class="f-Address" id="contactUs">

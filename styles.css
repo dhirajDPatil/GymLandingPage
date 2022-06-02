@@ -7,19 +7,10 @@ body{
     background-color: black;
 }
 
-/* .nav-bar {
-    background-color: white;
+.nav-bar{
     position: sticky;
-    top:0;
-    flex: auto;
-    padding: 5px 10px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    column-gap: 30px;
-} */
-
+    top: 0;
+}
 nav ul{
     background-color: white;
 }
@@ -29,6 +20,34 @@ nav ul li img{
     width: 75px;
     height: 75px;
 }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nav-btn{
+    /* padding-top: 20px; */
+    background-color: black;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-btn:hover{
+    background-color: green;
+}
+
+.nav-btn a {
+    position: relative;
+    top: 20px;
+    color: white;
+    text-decoration: none;
+}
+
 nav ul li{
     display: inline;
     color: black;
@@ -39,7 +58,7 @@ nav ul li{
 .nav-bar-new{
     display: flex;
     flex-direction: row;
-    column-gap: 40px;
+    column-gap: 0px;
     text-align: center;
     align-items: center;
     text-transform: uppercase;
@@ -66,13 +85,65 @@ nav div.button{
 .nav-bar .gymName h4{
     margin: 0px 10px;
 }
+
 /* background */
 
-main .pimage1{
-    box-sizing: border-box;
+main div.pimage1, div.pimage2{
     background-image:url(/Images/BackgroundPic1.png);
-    height: 1080px;
+    background-size: 100% 100%;
+    min-height: 700px;
+    min-width: 500px;
 }
+main div.pimage2{
+    background-image:url(/Images/BackgroundPic2.png);
+    background-size: 100% 100%;
+    min-height: 700px;
+    min-width: 500px;
+}
+
+main .pimage1 p{
+    padding: 10px 10px;
+    /* color: white; */
+    color: yellow;
+    opacity: 1;
+    font-weight: 600;
+    font-size: large;
+    justify-content: space-between;
+}
+
+main .pimage1 p:hover {
+    color: black;
+    zoom: 1.05;
+}
+
+main .about-container{
+    padding: 100px 10px;
+    max-width: 600px;
+}
+main .about-container .aboutGym:hover{
+    background-color: greenyellow;
+    opacity: 0.65;
+}
+
+.aboutGym{
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+main .pimage2 .text{
+    color: white;
+    opacity: 1;
+    font-weight: 600;
+    font-size: large;
+}
+
+.programs.font h4{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+/* form css */
 
 .registration {
     background-color: black;
@@ -101,40 +172,49 @@ input[type="submit"]{
     width: 260px;
 } 
 
-main .pimage2{
-    box-sizing: border-box;
+/* main .pimage2{
     background-image:url(/Images/BackgroundPic2.png);
-    height: 1080px;
-}
-
-/* main .pimage1{
-    background-image:url(/Images/BackgroundPic1.png);
-    height: auto;
-    position: relative;
-    opacity: 0.85;
-    background-size: cover;
-    margin-bottom: 10px;
-}
-main .pimage2{
-    background-image:url(/Images/BackgroundPic2.png);
-    height: 1080px;
-    min-height: 50%;
-    position: relative;
-    opacity: 0.85;
-    background-size: cover;
-    margin-bottom: 10px;
+    height: 100% 100%;
 } */
-
-main .pimage1 .text{
-    color: rgb(255, 64, 0);
-}
 
 .registration{
     color: rgb(255, 64, 0);
     text-align: center;
 }
 
+/* last timing */
+.gym-timing{
+    /* border: 1px solid gray; */
+    display: block;
+    align-content: center;
+}
 
+.gym-timing{
+    color: orangered;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gym-timing .box{
+    /* background-color: white; */
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.gym-timing .box:hover{
+    color: black;
+    /* color: white; */
+    background-color: green;
+}
+
+.gym-timing .box h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    word-spacing: 0.2px;
+}
 
 footer{
     background-color: black;
