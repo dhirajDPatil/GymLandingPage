@@ -13,6 +13,7 @@ body{
 }
 nav ul{
     background-color: white;
+    background-color: black;
 }
 
 nav ul li img{
@@ -116,12 +117,20 @@ main .pimage1 p:hover {
     zoom: 1.05;
 }
 
+.homeAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 main .about-container{
-    padding: 100px 10px;
-    max-width: 600px;
+    padding: 100px 50px;
+    min-width: 450px;
 }
 main .about-container .aboutGym:hover{
-    background-color: greenyellow;
+    background-color: white;
+    color: red;
     opacity: 0.65;
 }
 
@@ -131,23 +140,66 @@ main .about-container .aboutGym:hover{
 }
 
 main .pimage2 .text{
-    color: white;
-    opacity: 1;
+    padding-left: 10px;
+    color: greenyellow;
     font-weight: 600;
     font-size: large;
 }
 
+main .pimage2 .text li{
+    padding-left: 25px;
+}
+
+.displayPosition:hover{
+    zoom: 1.05;
+}
+
+.programs.font{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
 .programs.font h4{
-    padding-top: 20px;
+    color: orangered;
+    padding-top: 40px;
     text-transform: uppercase;
     font-size: larger;
 }
+
+.programs.font h4:hover{
+    zoom: 1.05;
+}
+
+/* plan */
+
+.Plans.font{
+    font-size: larger;
+    padding: 100px;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 70px;
+    flex-wrap: wrap;
+}
+
+
 
 /* form css */
 
 .registration {
     background-color: black;
     color: orangered;
+    margin-bottom: 100px;
+}
+
+.registration h3{
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+.inputfeild label{
+    text-transform: uppercase;
 }
 
 form{
@@ -164,32 +216,33 @@ form{
     margin-bottom: 10px;
 }
 
+.userD{
+    height: 30px;
+}
+
 input[type="email"]{
     margin-left: 20px;
 }
  
 input[type="submit"]{
-    width: 260px;
+    background-color: green;
+    height: 40px;
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 270px;
 } 
-
-/* main .pimage2{
-    background-image:url(/Images/BackgroundPic2.png);
-    height: 100% 100%;
-} */
 
 .registration{
     color: rgb(255, 64, 0);
     text-align: center;
 }
 
-/* last timing */
-.gym-timing{
-    /* border: 1px solid gray; */
-    display: block;
-    align-content: center;
-}
+/* last timing animation can be added to highlight time to user */
 
 .gym-timing{
+    padding: 100px;
     color: orangered;
     display: flex;
     flex-direction: row;
@@ -197,8 +250,11 @@ input[type="submit"]{
     flex-wrap: wrap;
 }
 
+/* .gym-timing:hover{
+    background-color: rgb(51, 51, 51);
+} */
+
 .gym-timing .box{
-    /* background-color: white; */
     text-align: center;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -206,7 +262,6 @@ input[type="submit"]{
 
 .gym-timing .box:hover{
     color: black;
-    /* color: white; */
     background-color: green;
 }
 
@@ -247,6 +302,7 @@ footer .container{
     font-size: larger;
     margin-top: 25px;
     margin-bottom: 10px;
+    padding-left: 64px;
 }
 
 ul{
@@ -260,6 +316,7 @@ ul{
 }
 
 .displayPosition{
+    margin: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -294,3 +351,14 @@ ul{
     color: white;
     margin-bottom: 20px;
 }
+
+
+@media only screen and (max-width: 940px) {
+    .footerLinks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0px;
+    }
+  }

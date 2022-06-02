@@ -14,11 +14,11 @@
             <li class="nav-buttons">
                 <ul class="nav-bar-new">
                     <li class="nav-btn"><a href="#home">Home</a></li>
-                    <li class="nav-btn"><a href="#id">Programmes</a></li>
-                    <li class="nav-btn"><a href="#id3">Gym Timing</a></li>
-                    <li class="nav-btn"><a href="#id3">Plans</a></li>
-                    <li class="nav-btn"><a href="#id3">Registration</a></li>
-                    <li class="nav-btn"><a href="#id2">Contact Us</a></li>
+                    <li class="nav-btn"><a href="#time">Gym Timing</a></li>
+                    <li class="nav-btn"><a href="#programs">Programmes</a></li>
+                    <li class="nav-btn"><a href="#plan">Plans</a></li>
+                    <li class="nav-btn"><a href="#form">Registration</a></li>
+                    <li class="nav-btn"><a href="#contact">Contact Us</a></li>
                 </ul>
             </li>
         </ul>
@@ -29,9 +29,24 @@
                 <p class="aboutGym">Forma Gym is located at the centre of Hinjewadi. Has all required equipments you need for your exercise. Has supportive trainers and staff. Additon to this new Programmes are also added scroll own to check. Has very clean environment, abides with recent COVID norms. Once registered youll have an apointment with nutritionist, based on your goal to add or reduce weight custom diet plan will be provided, as per persons eating habbits vegitarian/non vegitarian/mixed plans are provided</p>
             </div>
         </div>
+        <!-- timing -->
+        <div id="time" class="gym-timing">
+            <div class="box open">
+                <h3>Gym Time</h3>
+                <h3>Monday to Saturday</h3>
+            </div>
+            <div class="box open">
+                <h3>Opens At </h3>
+                <h3>6.30AM Morning</h3>
+            </div>
+            <div class="box close">
+                <h3>Closes At </h3>
+                <h3>9.00PM Evening</h3>
+            </div>
+        </div>
         <!-- new image -->
         <div class="pimage2">
-            <div class="text">
+            <div id="programs" class="text">
                 <div class="programs font">
                     <h4 class="title">Forma Programmes</h4>
                     <div class="displayPosition">
@@ -72,89 +87,40 @@
                 </div>
             </div>
         </div>
+        <div id="plan" class="Plans font">
+            <h3 class="title">Monthly Plans</h3>
+            <ul class="List">
+                <li><h4>1 Month one person Rs 1500</h4></li>
+                <li><h4>1 Month two person Rs 2000</h4></li>
+                <li><h4>4 Month one person Rs 4000</h4></li>
+                <li><h4>4 Month two person Rs 7000</h4></li>
+            </ul>
+        </div>
         <!-- form -->
-        <div class="registration">
+        <div id="form" class="registration">
             <h3 class="formname">Enter your details to book an apointment</h3>
             <div class="formdetails">
-                <form action="" method="post">
+                <form action="/action_page.php" method="post">
                     <div class="inputfeild">
                         <label for="fname">First Name</label>
-                        <input type="text" name="firstName" id="fname" placeholder="Enter first name">
+                        <input class="userD" type="text" name="firstName" id="fname" placeholder="Enter first name">
                     </div>
                     <div class="inputfeild">
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lastName" id="lname" placeholder="Enter last name ">
+                        <input class="userD" type="text" name="lastName" id="lname" placeholder="Enter last name ">
                     </div>
                     <div class="inputfeild">
                         <label for="email">Email Id</label>
-                        <input type="email" name="emaiId" id="eid"  placeholder="abc@xyz.com">
+                        <input class="userD" type="email" name="emaiId" id="email"  placeholder="abc@xyz.com">
                     </div>
                     <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
-        <!-- Timing -->
-        <div class="gym-timing">
-            <div class="box open">
-                <h3>Morning Opens At </h3>
-                <h3>6.30AM</h3>
-            </div>
-            <div class="box close">
-                <h3>Evening Closes At </h3>
-                <h3>9.00PM</h3>
-            </div>
-        </div>
     </main>
-    <footer class="f-Address" id="contactUs">
+    <footer class="f-Address" id="contact">
         <div class="container">
             <div class="footerLinks">
-                <!-- <div class="programs font">
-                    <h4 class="title">Forma Programmes</h4>
-                    <div class="displayPosition">
-                        <div class="icon">
-                            <img src="/Icons/zumba.png" alt="zumbapng">
-                        </div>
-                        <ul class="List">
-                            <li>Zumba Classes</li>
-                        </ul>
-                    </div>
-
-                    <div class="displayPosition">
-                        <div class="icon">
-                            <img src="/Icons/Yoga.png" alt="yogapng">
-                        </div>
-                        <ul class="List">
-                            <li>Yoga Classes</li>
-                        </ul>
-                    </div>
-
-                    <div class="displayPosition">
-                        <div class="icon">
-                            <img src="/Icons/circuitTraining.png" alt="circuitTrainingpng">
-                        </div>
-                        <ul class="List">
-                            <li>Circuit Training</li>
-                        </ul>
-                    </div>
-
-                    <div class="address mail displayPosition">
-                        <div class="icon">
-                            <img src="/Icons/Gym.png" alt="zumbapng">
-                        </div>
-                        <ul class="List">
-                            <li>Regular Workout</li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="Plans font">
-                    <h4 class="title">Monthly Plan</h4>
-                    <ul class="List">
-                        <li>1 Month one person Rs 1500 </li>
-                        <li>1 Month two person Rs 2000</li>
-                        <li>4 Month one person Rs 4000 </li>
-                        <li>4 Month two person Rs 7000</li>
-                    </ul>
-                </div>
                 <div class="Social font">
                     <h4 class="title">Social Media</h4>
                     <div class="address mail displayPosition">
